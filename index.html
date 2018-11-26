@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" >
+<head>
+  <meta charset="utf-8" />
+  <title>exercice 1 partie 4 angularjs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-app>
+  <!--on créer ng-click pour dire qu au clic on augmente count de 1. ng-init initialise le compteur a 0-->
+  <button ng-click="count = count + 1" ng-init="count=0" type="button" name="button">+</button>
+  <button ng-click="count = count - 1" type="button" name="button">-</button>
+  <p>{{count}}</p>
+</body>
+</html>
